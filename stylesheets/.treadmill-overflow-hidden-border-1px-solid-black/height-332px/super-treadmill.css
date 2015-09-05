@@ -1,0 +1,10 @@
+.treadmill {
+	overflow: hidden;
+	border: 1px solid black;
+	/*height: 332px;*/
+}
+
+.treadmill-unit {
+	overflow: hidden;
+	position: relative;
+}
