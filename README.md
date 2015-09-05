@@ -1,8 +1,8 @@
 # super-treadmill
 Cycle through HTML elements in a super awesome treadmill fashion using this jQuery-CSS plugin.
 
-## BRIEF ##
-	* __super-treadmill.js__ recursively moves a set of HTML units in a cyclic treadmill animation.
+## BRIEF
+	* __super-treadmill.js__ - recursively moves a set of HTML units in a cyclic treadmill animation.
 	[SEE DEMO](nishadmenezes.github.io/super-treadmill)
 
 ## HTML ##
