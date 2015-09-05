@@ -8,6 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/super-treadmill.css" media="screen">
   </head>
   <body>
     <section class="page-header">
@@ -20,8 +21,42 @@
 
     <section class="main-content">
       <h1>
-<a id="super-treadmill" class="anchor" href="#super-treadmill" aria-hidden="true"><span class="octicon octicon-link"></span></a>super-treadmill</h1>
+<a id="super-treadmill" class="anchor" href="#super-treadmill" aria-hidden="true"><span class="octicon octicon-link"></span></a>Super-treadmill</h1>
 
+<h2>DEMO</h2>
+<div id="mytreadmill" class="treadmill">
+				<div class="treadmill-unit">
+					<h2>Monkey biz</h2>
+					<p>Organic art trust fund photo booth skateboard fanny pack, Neutra before they sold kale chips four cardigan.</p>
+					<hr />
+				</div>
+				<div class="treadmill-unit">
+					<h2>Short stock</h2>
+					<p>Organic art trust fund photo booth skateboard fanny pack, Neutra before they sold kale chips four cardigan.</p>
+					<hr />
+				</div>
+				<div class="treadmill-unit">
+					<h2>Liver transplant</h2>
+					<p>Organic art trust fund photo booth skateboard fanny pack, Neutra before they sold kale chips four cardigan.</p>
+					<hr />
+				</div>
+				<div class="treadmill-unit">
+					<h2>Bumpy Curves</h2>
+					<p>Organic art trust fund photo booth skateboard fanny pack, Neutra before they sold kale chips four cardigan.</p>
+					<hr />
+				</div>
+				<div class="treadmill-unit">
+					<h2>Funny hawk</h2>
+					<p>Organic art trust fund photo booth skateboard fanny pack, Neutra before they sold kale chips four cardigan.</p>
+					<hr />
+				</div>
+				<div class="treadmill-unit">
+					<h2>Rumbling charm</h2>
+					<p>Organic art trust fund photo booth skateboard fanny pack, Neutra before they sold kale chips four cardigan.</p>
+					<hr />
+				</div>
+	</div>
+	
 <p>A simple jQuery-CSS plugin that can be used to cycle through HTML elements in a super awesome treadmill fashion!</p>
 
 <h2>
@@ -134,6 +169,18 @@
 
     </section>
 
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="super-treadmill.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#mytreadmill').startTreadmill({
+					runAfterPageLoad: true,
+            		direction: "down",
+            		speed: "medium",
+            		viewable: 3,
+            		pause: false
+				});
+			});
+		</script>
   </body>
 </html>
