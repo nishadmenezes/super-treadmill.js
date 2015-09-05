@@ -8,7 +8,7 @@
 	<body>
 		<div id="container">
 			<h1>Treadmill Demo</h1>
-			<div id="treadmill1" class="treadmill">
+			<div id="mytreadmill" class="treadmill">
 				<div class="treadmill-unit">
 					<h2>Monkey biz</h2>
 					<p>Organic art trust fund photo booth skateboard fanny pack, Neutra before they sold kale chips four cardigan.</p>
@@ -47,12 +47,12 @@
 		<script type="text/javascript" src="super-treadmill.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
-				$('#treadmill1').startTreadmill({
+				$('#mytreadmill').startTreadmill({
 					runAfterPageLoad: true,
-            		direction: "down",
-            		speed: "medium",
-            		viewable: 3,
-            		pause: false
+            				direction: "down",
+            				speed: "medium",
+            				viewable: 3,
+            				pause: false
 				});
 			});
 		</script>
