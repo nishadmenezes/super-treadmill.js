@@ -1,7 +1,10 @@
 .treadmill {
 	overflow: hidden;
 	border: 1px solid black;
+	
+	/* custom styling */
 	/*height: 332px;*/
+	padding-left: 10px;
 }
 
 .treadmill-unit {
