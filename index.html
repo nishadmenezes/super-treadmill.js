@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Super-treadmill.js by nishadmenezes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Super-treadmill.js</h1>
+      <h2 class="project-tagline">A simple jQuery-CSS plugin that can be used to cycle through HTML elements in a super awesome treadmill fashion!</h2>
+      <a href="https://github.com/nishadmenezes/super-treadmill" class="btn">View on GitHub</a>
+      <a href="https://github.com/nishadmenezes/super-treadmill/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/nishadmenezes/super-treadmill/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="super-treadmill" class="anchor" href="#super-treadmill" aria-hidden="true"><span class="octicon octicon-link"></span></a>super-treadmill</h1>
+
+<p>A simple jQuery-CSS plugin that can be used to cycle through HTML elements in a super awesome treadmill fashion!</p>
+
+<h2>
+<a id="html" class="anchor" href="#html" aria-hidden="true"><span class="octicon octicon-link"></span></a>HTML</h2>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>mytreadmill<span class="pl-pds">"</span></span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>treadmill<span class="pl-pds">"</span></span>&gt;
+                &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>treadmill-unit<span class="pl-pds">"</span></span>&gt;
+                    &lt;<span class="pl-ent">h2</span>&gt;Monkey biz&lt;/<span class="pl-ent">h2</span>&gt;
+                    &lt;<span class="pl-ent">p</span>&gt;Organic art trust fund photo booth skateboard fanny pack, Neutra before they sold kale chips four cardigan.&lt;/<span class="pl-ent">p</span>&gt;
+                    &lt;<span class="pl-ent">hr</span> /&gt;
+                &lt;/<span class="pl-ent">div</span>&gt;
+                &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>treadmill-unit<span class="pl-pds">"</span></span>&gt;
+                    &lt;<span class="pl-ent">h2</span>&gt;Short stock&lt;/<span class="pl-ent">h2</span>&gt;
+                    &lt;<span class="pl-ent">p</span>&gt;Organic art trust fund photo booth skateboard fanny pack, Neutra before they sold kale chips four cardigan.&lt;/<span class="pl-ent">p</span>&gt;
+                    &lt;<span class="pl-ent">hr</span> /&gt;
+                &lt;/<span class="pl-ent">div</span>&gt;
+                &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>treadmill-unit<span class="pl-pds">"</span></span>&gt;
+                    &lt;<span class="pl-ent">h2</span>&gt;Liver transplant&lt;/<span class="pl-ent">h2</span>&gt;
+                    &lt;<span class="pl-ent">p</span>&gt;Organic art trust fund photo booth skateboard fanny pack, Neutra before they sold kale chips four cardigan.&lt;/<span class="pl-ent">p</span>&gt;
+                    &lt;<span class="pl-ent">hr</span> /&gt;
+                &lt;/<span class="pl-ent">div</span>&gt;
+                &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>treadmill-unit<span class="pl-pds">"</span></span>&gt;
+                    &lt;<span class="pl-ent">h2</span>&gt;Rumbling charm&lt;/<span class="pl-ent">h2</span>&gt;
+                    &lt;<span class="pl-ent">p</span>&gt;Organic art trust fund photo booth skateboard fanny pack, Neutra before they sold kale chips four cardigan.&lt;/<span class="pl-ent">p</span>&gt;
+                    &lt;<span class="pl-ent">hr</span> /&gt;
+                &lt;/<span class="pl-ent">div</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<h2>
+<a id="css" class="anchor" href="#css" aria-hidden="true"><span class="octicon octicon-link"></span></a>CSS</h2>
+
+<div class="highlight highlight-css"><pre><span class="pl-e">.treadmill</span> {
+    <span class="pl-c1"><span class="pl-c1">overflow</span></span>: <span class="pl-c1">hidden</span>;
+    <span class="pl-c">/*optional stylings*/</span>
+    <span class="pl-c">/*border: 1px solid black;*/</span>
+    <span class="pl-c">/*height: 332px;*/</span>
+}
+
+<span class="pl-e">.treadmill-unit</span> {
+    <span class="pl-c1"><span class="pl-c1">overflow</span></span>: <span class="pl-c1">hidden</span>;
+    <span class="pl-c1"><span class="pl-c1">position</span></span>: <span class="pl-c1">relative</span>;
+}</pre></div>
+
+<h2>
+<a id="jquery-usage" class="anchor" href="#jquery-usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>jQuery-Usage</h2>
+
+<p>Default options:</p>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-c1">document</span>).ready(<span class="pl-k">function</span>() {
+  $(<span class="pl-s"><span class="pl-pds">'</span>#mytreadmill<span class="pl-pds">'</span></span>).startTreadmill();
+});</pre></div>
+
+<p>Move Treadmill Upwards or Downwards:</p>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-c1">document</span>).ready(<span class="pl-k">function</span>() {
+  $(<span class="pl-s"><span class="pl-pds">'</span>#mytreadmill1<span class="pl-pds">'</span></span>).startTreadmill({ direction<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>up<span class="pl-pds">"</span></span>});
+  $(<span class="pl-s"><span class="pl-pds">'</span>#mytreadmill2<span class="pl-pds">'</span></span>).startTreadmill({ direction<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>down<span class="pl-pds">"</span></span>});
+});</pre></div>
+
+<p>Change Treadmill Speed:</p>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-c1">document</span>).ready(<span class="pl-k">function</span>() {
+  $(<span class="pl-s"><span class="pl-pds">'</span>#mytreadmill1<span class="pl-pds">'</span></span>).startTreadmill({ diection<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>up<span class="pl-pds">"</span></span>, speed<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>slow<span class="pl-pds">"</span></span>});
+  $(<span class="pl-s"><span class="pl-pds">'</span>#mytreadmill2<span class="pl-pds">'</span></span>).startTreadmill({ diection<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>up<span class="pl-pds">"</span></span>, speed<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>medium<span class="pl-pds">"</span></span>});
+  $(<span class="pl-s"><span class="pl-pds">'</span>#mytreadmill3<span class="pl-pds">'</span></span>).startTreadmill({ diection<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>down<span class="pl-pds">"</span></span>, speed<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>fast<span class="pl-pds">"</span></span>});
+  $(<span class="pl-s"><span class="pl-pds">'</span>#mytreadmill4<span class="pl-pds">'</span></span>).startTreadmill({ direction<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>down<span class="pl-pds">"</span></span>, speed<span class="pl-k">:</span> <span class="pl-c1">1500</span>});
+});</pre></div>
+
+<p>Set Treadmill Height Based on Viewable Units:</p>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-c1">document</span>).ready(<span class="pl-k">function</span>() {
+  <span class="pl-c">//sets the height of the treadmill to 3 times the height of the first unit</span>
+  $(<span class="pl-s"><span class="pl-pds">'</span>#mytreadmill1<span class="pl-pds">'</span></span>).startTreadmill({ diection<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>up<span class="pl-pds">"</span></span>, speed<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>slow<span class="pl-pds">"</span></span>, viewable<span class="pl-k">:</span> <span class="pl-c1">3</span>});
+});</pre></div>
+
+<p>Pause Treadmill on mouse entry and exit:</p>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-c1">document</span>).ready(<span class="pl-k">function</span>() {
+  $(<span class="pl-s"><span class="pl-pds">'</span>#mytreadmill1<span class="pl-pds">'</span></span>).startTreadmill({ diection<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>up<span class="pl-pds">"</span></span>, speed<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>slow<span class="pl-pds">"</span></span>, viewable<span class="pl-k">:</span> <span class="pl-c1">3</span>, pause<span class="pl-k">:</span> <span class="pl-c1">true</span>});
+});</pre></div>
+
+<p>Set runAfterLoad option to false and use in combination with the pause as option:</p>
+
+<div class="highlight highlight-javascript"><pre>$(<span class="pl-c1">document</span>).ready(<span class="pl-k">function</span>() {
+  <span class="pl-c">//will start treadmill only when the mouse is on the treadmill</span>
+  $(<span class="pl-s"><span class="pl-pds">'</span>#mytreadmill1<span class="pl-pds">'</span></span>).startTreadmill({ diection<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>up<span class="pl-pds">"</span></span>, speed<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>fast<span class="pl-pds">"</span></span>, viewable<span class="pl-k">:</span> <span class="pl-c1">3</span>, pause<span class="pl-k">:</span> <span class="pl-c1">false</span>, runAfterLoad<span class="pl-k">:</span> <span class="pl-c1">false</span>});
+});</pre></div>
+
+<h2>
+<a id="options" class="anchor" href="#options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Options</h2>
+
+<ul>
+<li>
+<strong>direction</strong> - move the treadmill "up" or "down".</li>
+<li>
+<strong>speed</strong> - set the speed to fixed "slow", "medium" or "fast" or custom value.</li>
+<li>
+<strong>viewable</strong> - number of units viewable at a time : sets the height of the treadmill to viewable times the 1st unit.</li>
+<li>
+<strong>pause</strong> - pause or unpause the treadmill when mouse enters or exits treadmill and vice-versa.</li>
+<li>
+<strong>runAfterPageLoad</strong> - can be used in combination with pause to create opposite behaviour.</li>
+</ul>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/nishadmenezes/super-treadmill">Super-treadmill.js</a> is maintained by <a href="https://github.com/nishadmenezes">nishadmenezes</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
