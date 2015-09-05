@@ -109,7 +109,6 @@
         if(settings.pause) {
             $(this).mouseenter( function() {
                 running = !running;
-                alert('mouseenter');
             });
 
             $(this).mouseleave( function() {
