@@ -1,5 +1,7 @@
 # super-treadmill
-A simple jQuery-CSS plugin that can be used to cycle through HTML elements in a super awesome treadmill fashion!
+Cycle through HTML elements in a super awesome treadmill fashion using this jQuery-CSS plugin.
+	- super-treadmill.js recursively moves a set of HTML units in a cyclic animation of a treadmill.
+	- SEE DEMO - nishadmenezes.github.io/super-treadmill
 
 ## HTML ##
 
