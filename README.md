@@ -1,8 +1,8 @@
 # Super Treadmill JS
 Cycle through HTML elements in a super awesome treadmill fashion using this jQuery-CSS plugin.
 
-## BRIEF
-super-treadmill.js moves a set of HTML units in a cyclic treadmill animation. [SEE DEMO](http://nishadmenezes.github.io/super-treadmill/)
+## Brief
+super-treadmill.js moves a set of HTML units in a cyclic treadmill animation. [SEE DEMO](http://nishadmenezes.github.io/super-treadmill.js/)
 
 ## HTML ##
 
@@ -49,7 +49,7 @@ super-treadmill.js moves a set of HTML units in a cyclic treadmill animation. [S
 
 ## jQuery-Usage ##
 
-Default options:
+### Default options:
 
 ```javascript
 $(document).ready(function() {
@@ -57,7 +57,7 @@ $(document).ready(function() {
 });
 ```
 
-Move Treadmill Upwards or Downwards:
+### Move Treadmill Upwards or Downwards:
 
 ```javascript
 $(document).ready(function() {
@@ -66,7 +66,7 @@ $(document).ready(function() {
 });
 ```
 
-Change Treadmill Speed:
+### Change Treadmill Speed:
 
 ```javascript
 $(document).ready(function() {
@@ -77,7 +77,7 @@ $(document).ready(function() {
 });
 ```
 
-Set Treadmill Height Based on Viewable Units:
+### Set Treadmill Height Based on Viewable Units:
 
 ```javascript
 $(document).ready(function() {
@@ -86,7 +86,7 @@ $(document).ready(function() {
 });
 ```
 
-Pause Treadmill on mouse entry and exit:
+### Pause Treadmill on mouse entry and exit:
 
 ```javascript
 $(document).ready(function() {
@@ -94,7 +94,7 @@ $(document).ready(function() {
 });
 ```
 
-Set runAfterLoad option to false and use in combination with the pause as option:
+### Set runAfterLoad option to false and use in combination with the pause as option:
 
 ```javascript
 $(document).ready(function() {
@@ -105,8 +105,12 @@ $(document).ready(function() {
 
 ## Options ##
 
-* __direction__ - move the treadmill "up" or "down".
-* __speed__ - set the speed to fixed "slow", "medium" or "fast" or custom value.
-* __viewable__ - number of units viewable at a time : sets the height of the treadmill to viewable times the 1st unit.
-* __pause__ - pause or unpause the treadmill when mouse enters or exits treadmill and vice-versa.
-* __runAfterPageLoad__ - can be used in combination with pause to create opposite behaviour.
+* __direction__ - move the treadmill "up" or "down" _(default: "down")_.
+* __speed__ - set the speed to fixed "slow", "medium" or "fast" or custom value _(default: "medium")_.
+* __viewable__ - number of units viewable at a time : sets the height of the treadmill to viewable times the 1st unit _(default: 3)_. _note: set to 0 for custom height in CSS_**.
+* __pause__ - pause or unpause the treadmill when mouse enters or exits treadmill and vice-versa _(default: true)_.
+* __runAfterPageLoad__ - can be used in combination with pause to create opposite behaviour _(default: true)_.
+
+## License ##
+
+MIT - [SEE HERE](../blob/master/LICENSE)
