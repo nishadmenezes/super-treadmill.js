@@ -107,10 +107,10 @@ $(document).ready(function() {
 
 * __direction__ - move the treadmill "up" or "down" _(default: "down")_.
 * __speed__ - set the speed to fixed "slow", "medium" or "fast" or custom value _(default: "medium")_.
-* __viewable__ - number of units viewable at a time : sets the height of the treadmill to viewable times the 1st unit _(default: 3)_. _note: set to 0 for custom height in CSS_**.
+* __viewable__ - number of units viewable at a time : sets the height of the treadmill to viewable times the 1st unit _(default: 3)_. __Note: set to 0 for custom height in CSS file__.
 * __pause__ - pause or unpause the treadmill when mouse enters or exits treadmill and vice-versa _(default: true)_.
 * __runAfterPageLoad__ - can be used in combination with pause to create opposite behaviour _(default: true)_.
 
 ## License ##
 
-MIT - [SEE HERE](../blob/master/LICENSE)
+MIT - [SEE HERE](../master/LICENSE)
